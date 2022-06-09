@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo DOM</title>
+</head>
+
+<body>
+    <div id="camelCase">
+        React Js <b> hahaha</b>
+    </div>
+    <ul id="listDemo">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <ul id="menu">
+
+    </ul>
+    <script>
+        let reactjs = document.getElementById("camelCase");
+        alert(reactjs.innerHTML);
+        alert(reactjs.innerText);
+        reactjs.style.color = "red";
+        // thêm xóa phần tử trong DOM --> tham khảo thêm
+        function createMenuItem(name) {
+            let li = document.createElement("li");
+            li.innerText = name;
+            return li;
+        }
+        let menu = document.getElementById("menu");
+        menu.appendChild(createMenuItem('HOME'));
+        menu.appendChild(createMenuItem('ABOUT'));
+        menu.appendChild(createMenuItem('CONTACT'));
+    </script>
+</body>
+
+</html>
