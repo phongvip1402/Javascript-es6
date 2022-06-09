@@ -12,7 +12,7 @@ console.log(isTrueAccount('_abc123'));
 console.log(isTrueAccount('______'));
 console.log(isTrueAccount('123456'));
 console.log(isTrueAccount('abcdefg'));
-console.log('Account không hợp lệ');
+console.log('Account no hợp lệ');
 console.log(isTrueAccount('@'));
 console.log(isTrueAccount('12345'));
 console.log(isTrueAccount('1234_'));
