@@ -12,7 +12,7 @@ class Person{
     };
 }
 
-class Program extends Person{
+class Programer extends Person{
     static programmingLanguage;
     constructor(name){
         super(name);
@@ -25,5 +25,5 @@ class Program extends Person{
     }
 }
 
-const program1 = new Program('jonh');
+const program1 = new Programer('john');
 program1.programmingLanguage = 'javascript';
