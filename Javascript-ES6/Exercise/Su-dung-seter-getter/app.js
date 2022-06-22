@@ -13,9 +13,9 @@ class Person{
 }
 
 class Programer extends Person{
-    static programmingLanguage;
-    constructor(name){
+    constructor(name,programmingLanguage){
         super(name);
+        this.programmingLanguage= programmingLanguage;
     }
     set writeCode(programmingLanguage){
         this.programmingLanguage = programmingLanguage;
@@ -25,5 +25,8 @@ class Programer extends Person{
     }
 }
 
-const program1 = new Programer('john');
+let program1 = new Programer('john');
 program1.programmingLanguage = 'javascript';
+console.log(program1.writeCode);
+program1.writeCode= 'python';
+console.log(program1.writeCode);
